@@ -12,14 +12,14 @@ jobs:
         with:
           dotnet-version: "5.0.101" # Check https://dotnet.microsoft.com/download/dotnet/5.0 for latest SDK version
 
-      # - name: Restore dependencies
-      #   run: dotnet restore
+      - name: Restore dependencies
+        run: dotnet restore
 
-      # - name: build Application
-      #   run: dotnet build -c release --no-restore
+      - name: build Application
+        run: dotnet build -c release --no-restore
 
-      # - name: Run automated test
-      #   run: dotnet test -c Release --no-restore
+      - name: Run automated test
+        run: dotnet test -c Release --no-restore
 
-      - run: dotnet build
-      - run: dotnet test
+      # - run: dotnet build
+      # - run: dotnet test
